@@ -11,8 +11,8 @@
 import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:micro_app_formulario/screens/formulario.dart' deferred as _i1;
 
-abstract class $AppRouter extends _i2.RootStackRouter {
-  $AppRouter({super.navigatorKey});
+abstract class $MicroAppFormularioRouter extends _i2.RootStackRouter {
+  $MicroAppFormularioRouter({super.navigatorKey});
 
   @override
   final Map<String, _i2.PageFactory> pagesMap = {

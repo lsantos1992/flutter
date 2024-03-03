@@ -1,20 +1,25 @@
+import 'package:base_web/routes/web_route.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
+//Esse pacote é exclusivo para web
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter_web_plugins/url_strategy.dart';
+
+void main() async {
+  if (kIsWeb) {
+    usePathUrlStrategy();
+  }
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    BaseAppRouter appRouter = BaseAppRouter();
+    return MaterialApp.router(
+      routerConfig: appRouter.config(),
     );
   }
 }
