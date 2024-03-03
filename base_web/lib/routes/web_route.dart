@@ -11,7 +11,7 @@ import 'web_route.gr.dart';
 class BaseAppRouter extends $BaseAppRouter {
   @override
   List<AutoRoute> get routes => [
-        AutoRoute(page: HomeRoute.page, path: '/home', initial: true),
+        AutoRoute(page: HomeRoute.page, path: '/', initial: true),
         ...MicroAppHomeRouter().routes,
         ...MicroAppFormularioRouter().routes,
       ];
