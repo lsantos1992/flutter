@@ -5,7 +5,5 @@ import 'micro_app_formulario_router.gr.dart';
 @AutoRouterConfig(deferredLoading: true)
 class MicroAppFormularioRouter extends $MicroAppFormularioRouter {
   @override
-  List<AutoRoute> get routes => [
-        AutoRoute(page: FormularioApp.page, initial: true),
-      ];
+  List<AutoRoute> get routes => [];
 }

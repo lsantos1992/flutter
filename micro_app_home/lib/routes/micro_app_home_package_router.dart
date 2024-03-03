@@ -12,7 +12,7 @@ class MicroAppHomeModuleRouter extends $MicroAppHomeModuleRouter {
   final prefix = kIsWeb ? '/' : '/home';
 
   List<AutoRoute> get routes => [
-        AutoRoute(page: HomeRoute.page, path: prefix),
+        AutoRoute(page: HomeRoute.page, path: prefix, initial: true),
         AutoRoute(page: MostrarApp.page, path: '$prefix/mostrar'),
       ];
 }

@@ -11,5 +11,7 @@ import 'package:micro_app_home/routes/micro_app_home_package_router.dart';
 class BaseAppRouter extends $BaseAppRouter {
   @override
   // TODO: implement routes
-  List<AutoRoute> get routes => throw UnimplementedError();
+  List<AutoRoute> get routes => [
+        ...MicroAppHomeModuleRouter().routes,
+      ];
 }
