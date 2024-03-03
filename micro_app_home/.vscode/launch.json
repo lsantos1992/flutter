@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "flutter_web_poc",
+            "name": "micro_app_home",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "flutter_web_poc (profile mode)",
+            "name": "micro_app_home (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "flutter_web_poc (release mode)",
+            "name": "micro_app_home (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

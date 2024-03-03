@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -19,6 +17,7 @@ class HomePage extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             _launchUrl();
+            //AutoRouter.of(context).push(const MostrarApp());
           },
           child: const Text('Abrir Formulário'),
         ),

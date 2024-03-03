@@ -9,11 +9,11 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i3;
-import 'package:flutter_web_poc/screens/home.dart' deferred as _i1;
-import 'package:flutter_web_poc/screens/mostrar.dart' deferred as _i2;
+import 'package:micro_app_home/screens/home.dart' deferred as _i1;
+import 'package:micro_app_home/screens/mostrar.dart' deferred as _i2;
 
-abstract class $AppRouter extends _i3.RootStackRouter {
-  $AppRouter({super.navigatorKey});
+abstract class $MicroAppHomeRouter extends _i3.RootStackRouter {
+  $MicroAppHomeRouter({super.navigatorKey});
 
   @override
   final Map<String, _i3.PageFactory> pagesMap = {

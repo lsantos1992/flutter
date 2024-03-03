@@ -1,13 +1,15 @@
 import 'package:auto_route/auto_route.dart';
 
-import 'app_router.gr.dart';
+import 'micro_app_home_router.gr.dart';
+
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 @AutoRouterConfig(
   replaceInRouteName: 'Page,Route',
   deferredLoading: true,
 )
-class AppRouter extends $AppRouter {
-  final prefix = '/home';
+class MicroAppHomeRouter extends $MicroAppHomeRouter {
+  final prefix = kIsWeb ? '/' : '/home';
 
   @override
   List<AutoRoute> get routes => [

@@ -1,4 +1,4 @@
-name: flutter_web_poc
+name: micro_app_home
 description: "A new Flutter project."
 publish_to: 'none'
 version: 0.1.0
@@ -27,3 +27,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+build:
+  spa_fallback: true

@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_web_poc/utils/storage.dart';
+import 'package:micro_app_home/utils/storage.dart';
 
 @RoutePage(deferredLoading: true)
 class MostrarApp extends StatelessWidget {

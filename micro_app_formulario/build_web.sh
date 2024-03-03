@@ -13,7 +13,7 @@ flutter pub get
 flutter build web --release
 
 # Define o diretório de destino para os arquivos build
-diretorio_destino="/Users/luiz.a.dos.santos/Documents/flutter_clean_architecture/php-server/formulario"
+diretorio_destino="/Users/luiz.a.dos.santos/Documents/web/formulario"
 
 # Move os arquivos build para o diretório de destino
 mv ./build/web/* "$diretorio_destino"

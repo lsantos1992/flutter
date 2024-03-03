@@ -1,4 +1,4 @@
-package com.example.flutter_web_poc
+package com.example.micro_app_home
 
 import io.flutter.embedding.android.FlutterActivity
 

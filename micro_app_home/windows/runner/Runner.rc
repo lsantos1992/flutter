@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "flutter_web_poc" "\0"
+            VALUE "FileDescription", "micro_app_home" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "flutter_web_poc" "\0"
+            VALUE "InternalName", "micro_app_home" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "flutter_web_poc.exe" "\0"
-            VALUE "ProductName", "flutter_web_poc" "\0"
+            VALUE "OriginalFilename", "micro_app_home.exe" "\0"
+            VALUE "ProductName", "micro_app_home" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
