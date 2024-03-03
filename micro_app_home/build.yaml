@@ -1,0 +1,12 @@
+targets:
+  $default:
+    builders:
+      build_web_compilers:
+        options:
+          compiler: dart2js
+          dart2js_args:
+            - --minify
+          entrypoints:
+            - lib/src/main.dart
+            - lib/src/formulario.dart
+            - lib/src/mostrar.dart
