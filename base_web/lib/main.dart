@@ -5,12 +5,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:micro_core/storage/storage.dart';
 
 void main() async {
   if (kIsWeb) {
     usePathUrlStrategy();
   }
   await Hive.initFlutter();
+  Hive.registerAdapter(UserAdapter());
   runApp(const MyApp());
 }
 

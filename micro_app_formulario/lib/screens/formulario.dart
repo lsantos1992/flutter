@@ -1,9 +1,7 @@
 import 'package:flutter/foundation.dart' as foundation;
-import 'dart:html' if (foundation.kIsWeb) 'dart:html';
-
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:micro_app_formulario/utils/storage.dart';
+import 'package:micro_core/micro_core.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 final Uri _url = Uri.parse('/home/mostrar');
@@ -42,21 +40,14 @@ class _FormularioAppState extends State<FormularioApp> {
             ElevatedButton(
               onPressed: () async {
                 var storage = Storage();
-
                 storage.save(_usuarioController.text, _senhaController.text);
 
                 // Ao pressionar o botão, enviar as informações para o próximo widget
-                //AutoRouter.of(context).pushNamed('/web/mostrar');
-                _launchUrl();
-
-                // Navigator.pushNamed(
-                //   context,
-                //   '/mostrar',
-                //   arguments: {
-                //     'usuario': _usuarioController.text,
-                //     'senha': _senhaController.text,
-                //   },
-                // );
+                if (foundation.kIsWeb) {
+                  _launchUrl();
+                } else {
+                  AutoRouter.of(context).pushNamed('/home/mostrar');
+                }
               },
               child: const Text('Enviar'),
             ),

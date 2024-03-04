@@ -50,7 +50,6 @@ class Storage {
       return storage.get('user');
     } catch (e) {
       // Lidar com possíveis erros ao acessar o HiveBox
-      print('Erro ao recuperar dados do HiveBox: $e');
       return User(user: 'N/A', password: 'N/A');
     }
   }

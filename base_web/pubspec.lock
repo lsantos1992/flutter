@@ -430,6 +430,13 @@ packages:
       relative: true
     source: path
     version: "0.1.0"
+  micro_core:
+    dependency: "direct main"
+    description:
+      path: "../micro_core"
+      relative: true
+    source: path
+    version: "0.0.1"
   mime:
     dependency: transitive
     description:

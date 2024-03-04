@@ -14,6 +14,8 @@ dependencies:
     path: ../micro_app_home
   micro_app_formulario:
     path: ../micro_app_formulario
+  micro_core:
+    path: ../micro_core
   hive:
   hive_flutter:
 

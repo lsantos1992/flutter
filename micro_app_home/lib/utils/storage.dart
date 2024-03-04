@@ -1,4 +1,5 @@
 import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class User {
   @HiveField(0)
@@ -39,12 +40,14 @@ class UserAdapter extends TypeAdapter<User> {
 
 class Storage {
   Future<void> save(String usuario, String senha) async {
+    await Hive.initFlutter();
     var storage = await Hive.openBox('storage');
     User user = User(user: usuario, password: senha);
     await storage.put('user', user);
   }
 
   Future<User?> get() async {
+    await Hive.initFlutter();
     var storage = await Hive.openBox('storage');
     try {
       return storage.get('user');

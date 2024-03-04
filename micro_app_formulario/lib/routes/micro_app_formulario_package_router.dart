@@ -7,6 +7,6 @@ import 'package:micro_app_formulario/routes/micro_app_formulario_package_router.
 )
 class MicroAppFormularioModuleRouter extends $MicroAppFormularioModuleRouter {
   List<AutoRoute> get routes => [
-        AutoRoute(page: FormularioApp.page, path: '/'),
+        AutoRoute(page: FormularioApp.page, path: '/formulario'),
       ];
 }
