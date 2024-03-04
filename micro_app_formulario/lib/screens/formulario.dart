@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:micro_app_formulario/utils/storage.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-final Uri _url = Uri.parse('/web/mostrar/');
+final Uri _url = Uri.parse('/home/mostrar');
 
 @RoutePage(deferredLoading: true)
 class FormularioApp extends StatefulWidget {

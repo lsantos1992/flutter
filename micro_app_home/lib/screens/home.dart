@@ -2,7 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-final Uri _url = Uri.parse('/web/formulario/');
+final Uri _url = Uri.parse('/formulario/');
 
 @RoutePage(deferredLoading: true)
 class HomePage extends StatelessWidget {
