@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:micro_app_home/routes/micro_app_home_package_router.dart';
 import 'package:micro_app_home/routes/micro_app_home_router.dart';
-import 'package:micro_app_home/utils/storage.dart';
+import 'package:micro_core/micro_core.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 //Esse pacote é exclusivo para web

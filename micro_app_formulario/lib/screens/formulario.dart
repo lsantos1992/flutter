@@ -8,6 +8,8 @@ final Uri _url = Uri.parse('/home/mostrar');
 
 @RoutePage(deferredLoading: true)
 class FormularioApp extends StatefulWidget {
+  const FormularioApp({super.key});
+
   @override
   _FormularioAppState createState() => _FormularioAppState();
 }

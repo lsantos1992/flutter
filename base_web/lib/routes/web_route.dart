@@ -12,7 +12,6 @@ import 'package:micro_app_formulario/routes/micro_app_formulario_package_router.
 )
 class BaseAppRouter extends $BaseAppRouter {
   @override
-  // TODO: implement routes
   List<AutoRoute> get routes => [
         ...MicroAppHomeModuleRouter().routes,
         ...MicroAppFormularioModuleRouter().routes,
