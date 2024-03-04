@@ -8,7 +8,7 @@ import 'micro_app_formulario_package_router.dart';
     MicroAppFormularioModuleRouter,
   ],
 )
-class MicroAppHomeRouter extends $MicroAppHomeRouter {
+class MicroAppFormularioRouter extends $MicroAppFormularioRouter {
   @override
   List<AutoRoute> get routes => [
         ...MicroAppFormularioModuleRouter().routes,

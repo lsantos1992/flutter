@@ -13,8 +13,8 @@ import 'package:micro_app_formulario/routes/micro_app_formulario_package_router.
     as _i3;
 import 'package:micro_app_formulario/screens/formulario.dart' deferred as _i1;
 
-abstract class $MicroAppHomeRouter extends _i2.RootStackRouter {
-  $MicroAppHomeRouter({super.navigatorKey});
+abstract class $MicroAppFormularioRouter extends _i2.RootStackRouter {
+  $MicroAppFormularioRouter({super.navigatorKey});
 
   @override
   final Map<String, _i2.PageFactory> pagesMap = {
