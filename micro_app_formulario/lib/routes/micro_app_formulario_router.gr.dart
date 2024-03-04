@@ -9,10 +9,12 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i2;
+import 'package:micro_app_formulario/routes/micro_app_formulario_package_router.dart'
+    as _i3;
 import 'package:micro_app_formulario/screens/formulario.dart' deferred as _i1;
 
-abstract class $MicroAppFormularioRouter extends _i2.RootStackRouter {
-  $MicroAppFormularioRouter({super.navigatorKey});
+abstract class $MicroAppHomeRouter extends _i2.RootStackRouter {
+  $MicroAppHomeRouter({super.navigatorKey});
 
   @override
   final Map<String, _i2.PageFactory> pagesMap = {
@@ -24,7 +26,8 @@ abstract class $MicroAppFormularioRouter extends _i2.RootStackRouter {
           () => _i1.FormularioApp(),
         ),
       );
-    }
+    },
+    ..._i3.MicroAppFormularioModuleRouter().pagesMap,
   };
 }
 

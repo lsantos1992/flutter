@@ -9,6 +9,8 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i3;
+import 'package:micro_app_home/routes/micro_app_home_package_router.dart'
+    as _i4;
 import 'package:micro_app_home/screens/home.dart' deferred as _i1;
 import 'package:micro_app_home/screens/mostrar.dart' deferred as _i2;
 
@@ -35,6 +37,7 @@ abstract class $MicroAppHomeRouter extends _i3.RootStackRouter {
         ),
       );
     },
+    ..._i4.MicroAppHomeModuleRouter().pagesMap,
   };
 }
 

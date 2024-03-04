@@ -10,6 +10,6 @@ class MicroAppFormularioModuleRouter extends $MicroAppFormularioModuleRouter {
   final prefix = kIsWeb ? '/' : '/formulario';
 
   List<AutoRoute> get routes => [
-        AutoRoute(page: FormularioApp.page, path: "/formulario"),
+        AutoRoute(page: FormularioApp.page, path: '/formulario'),
       ];
 }

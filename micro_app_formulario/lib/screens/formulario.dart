@@ -4,6 +4,9 @@ import 'dart:html' if (foundation.kIsWeb) 'dart:html';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:micro_app_formulario/utils/storage.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri _url = Uri.parse('/web/mostrar/');
 
 @RoutePage(deferredLoading: true)
 class FormularioApp extends StatefulWidget {
@@ -28,11 +31,11 @@ class _FormularioAppState extends State<FormularioApp> {
           children: [
             TextField(
               controller: _usuarioController,
-              decoration: InputDecoration(labelText: 'Usuário'),
+              decoration: const InputDecoration(labelText: 'Usuário'),
             ),
             TextField(
               controller: _senhaController,
-              decoration: InputDecoration(labelText: 'Senha'),
+              decoration: const InputDecoration(labelText: 'Senha'),
               obscureText: true, // Para ocultar a senha digitada
             ),
             const SizedBox(height: 20),
@@ -43,11 +46,8 @@ class _FormularioAppState extends State<FormularioApp> {
                 storage.save(_usuarioController.text, _senhaController.text);
 
                 // Ao pressionar o botão, enviar as informações para o próximo widget
-                if (foundation.kIsWeb)
-                  window.location.href = "/home/mostrar";
-                else {
-                  AutoRouter.of(context).pushNamed('/home/mostrar');
-                }
+                //AutoRouter.of(context).pushNamed('/web/mostrar');
+                _launchUrl();
 
                 // Navigator.pushNamed(
                 //   context,
@@ -64,5 +64,11 @@ class _FormularioAppState extends State<FormularioApp> {
         ),
       ),
     );
+  }
+}
+
+Future<void> _launchUrl() async {
+  if (!await launchUrl(_url, webOnlyWindowName: '_self')) {
+    throw Exception('Could not launch $_url');
   }
 }

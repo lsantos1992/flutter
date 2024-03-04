@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:micro_app_home/routes/micro_app_home_package_router.dart';
 import 'package:micro_app_home/routes/micro_app_home_router.dart';
 import 'package:micro_app_home/utils/storage.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // MicroAppHomeRouter appRouter = MicroAppHomeRouter();
     MicroAppHomeRouter appRouter = MicroAppHomeRouter();
     return MaterialApp.router(
       routerConfig: appRouter.config(),
